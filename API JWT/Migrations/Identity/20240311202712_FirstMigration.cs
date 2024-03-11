@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace API_JWT.Migrations
+namespace API_JWT.Migrations.Identity
 {
     /// <inheritdoc />
     public partial class FirstMigration : Migration

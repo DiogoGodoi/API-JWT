@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace CamadaAcessoDados
 {
-	public class Dao: DbContext
+	public class MeuContexto: DbContext
 	{
-		public Dao(DbContextOptions<Dao> options):base(options) { }
+		public MeuContexto(DbContextOptions<MeuContexto> options):base(options) { }
 
 		public DbSet<MdlTarefas> Tarefas {get; set;}
 

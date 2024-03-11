@@ -5,17 +5,17 @@ namespace CamadaAcessoDados
 {
 	public class RepositoryTarefas : IRepositoryTarefas
 	{
-		private readonly Dao dao;
-		public RepositoryTarefas(Dao dao)
+		private readonly MeuContexto _context;
+		public RepositoryTarefas(MeuContexto _context)
 		{
-			this.dao = dao;
+			this._context = _context;
 		}
 		public async Task<bool> CreateTarefa(MdlTarefas tarefa)
 		{
 			try
 			{
-				await dao.Tarefas.AddAsync(tarefa);
-				await dao.SaveChangesAsync();
+				await _context.Tarefas.AddAsync(tarefa);
+				await _context.SaveChangesAsync();
 				return true;
 			}
 			catch (Exception ex)
@@ -26,11 +26,11 @@ namespace CamadaAcessoDados
 		}
 		public async Task<IEnumerable<MdlTarefas>> GetTarefas()
 		{
-			return await dao.Tarefas.ToListAsync();
+			return await _context.Tarefas.ToListAsync();
 		}
 		public async Task<MdlTarefas> GetTarefasByID(int id)
 		{
-			var tarefa = await dao.Tarefas.FirstOrDefaultAsync(i => i.id == id);
+			var tarefa = await _context.Tarefas.FirstOrDefaultAsync(i => i.id == id);
 
 			if (tarefa == null)
 			{
@@ -44,7 +44,7 @@ namespace CamadaAcessoDados
 		}
 		public async Task<bool> UpdateTarefa(int id, MdlTarefas pmtTarefa)
 		{
-			var tarefa = await dao.Tarefas.FirstOrDefaultAsync(i => i.id == id);
+			var tarefa = await _context.Tarefas.FirstOrDefaultAsync(i => i.id == id);
 			if (tarefa == null)
 			{
 				return false;
@@ -55,7 +55,7 @@ namespace CamadaAcessoDados
 				tarefa.date = pmtTarefa.date;
 				tarefa.completa = pmtTarefa.completa;
 
-				await dao.SaveChangesAsync();
+				await _context.SaveChangesAsync();
 				return true;
 			}
 		}
@@ -63,7 +63,7 @@ namespace CamadaAcessoDados
 		{
 			try
 			{
-				var tarefa = await dao.Tarefas.FirstOrDefaultAsync(i => i.id == id);
+				var tarefa = await _context.Tarefas.FirstOrDefaultAsync(i => i.id == id);
 
 				if (tarefa == null)
 				{
@@ -71,8 +71,8 @@ namespace CamadaAcessoDados
 				}
 				else
 				{
-					dao.Tarefas.Remove(tarefa);
-					await dao.SaveChangesAsync();
+					_context.Tarefas.Remove(tarefa);
+					await _context.SaveChangesAsync();
 					return true;
 				}
 			}

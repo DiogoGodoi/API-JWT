@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace API_JWT.Migrations.DaoMigrations
+namespace API_JWT.Migrations
 {
-    [DbContext(typeof(Dao))]
-    partial class DaoModelSnapshot : ModelSnapshot
+    [DbContext(typeof(MeuContexto))]
+    partial class MeuContextoModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

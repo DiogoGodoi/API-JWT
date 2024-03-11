@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 var key = Encoding.ASCII.GetBytes(Key.key);
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<Dao>();
+builder.Services.AddDbContext<MeuContexto>();
 builder.Services.AddDbContext<IdentityContext>();
 builder.Services.AddScoped<IRepositoryTarefas, RepositoryTarefas>();
 builder.Services.AddScoped<CtrlTarefas>();

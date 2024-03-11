@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace API_JWT.Migrations.DaoMigrations
+namespace API_JWT.Migrations
 {
     /// <inheritdoc />
     public partial class FirstMigration : Migration

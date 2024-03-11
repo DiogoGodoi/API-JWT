@@ -4,19 +4,16 @@ using CamadaAcessoDados;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace API_JWT.Migrations
+namespace API_JWT.Migrations.Identity
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20240311202046_FirstMigration")]
-    partial class FirstMigration
+    partial class IdentityContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

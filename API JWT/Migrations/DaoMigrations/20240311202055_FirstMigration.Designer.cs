@@ -9,10 +9,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace API_JWT.Migrations
+namespace API_JWT.Migrations.DaoMigrations
 {
     [DbContext(typeof(Dao))]
-    [Migration("20240311164153_FirstMigration")]
+    [Migration("20240311202055_FirstMigration")]
     partial class FirstMigration
     {
         /// <inheritdoc />

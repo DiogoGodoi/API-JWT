@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API JWT", "API JWT\API JWT.csproj", "{67A5E0E4-D54D-4B10-BDEA-997531BA6BE8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{26318044-9916-42EB-9E9E-F077F5612328} = {26318044-9916-42EB-9E9E-F077F5612328}
+		{7C117C30-85BF-4B54-95F0-8B3E781D1D13} = {7C117C30-85BF-4B54-95F0-8B3E781D1D13}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CamadaModelo", "CamadaModelo\CamadaModelo.csproj", "{C6381D1E-3E49-40F9-80CB-AADF3A99DCCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CamadaAcessoDados", "CamadaAcessoDados\CamadaAcessoDados.csproj", "{26318044-9916-42EB-9E9E-F077F5612328}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CamadaController", "CamadaController\CamadaController.csproj", "{7C117C30-85BF-4B54-95F0-8B3E781D1D13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67A5E0E4-D54D-4B10-BDEA-997531BA6BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A5E0E4-D54D-4B10-BDEA-997531BA6BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A5E0E4-D54D-4B10-BDEA-997531BA6BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A5E0E4-D54D-4B10-BDEA-997531BA6BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6381D1E-3E49-40F9-80CB-AADF3A99DCCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6381D1E-3E49-40F9-80CB-AADF3A99DCCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6381D1E-3E49-40F9-80CB-AADF3A99DCCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6381D1E-3E49-40F9-80CB-AADF3A99DCCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26318044-9916-42EB-9E9E-F077F5612328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26318044-9916-42EB-9E9E-F077F5612328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26318044-9916-42EB-9E9E-F077F5612328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26318044-9916-42EB-9E9E-F077F5612328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C117C30-85BF-4B54-95F0-8B3E781D1D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C117C30-85BF-4B54-95F0-8B3E781D1D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C117C30-85BF-4B54-95F0-8B3E781D1D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C117C30-85BF-4B54-95F0-8B3E781D1D13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {567510A5-077B-457E-A32C-7D28DDF5269B}
+	EndGlobalSection
+EndGlobal

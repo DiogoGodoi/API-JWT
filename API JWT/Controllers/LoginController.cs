@@ -26,11 +26,7 @@ namespace API_JWT.Controllers
 		{
 			try
 			{
-				if (!ModelState.IsValid)
-				{
-					return NotFound(ModelState);
-				}
-
+			
 				var userFind = await _userManager.FindByEmailAsync(usuario.email);
 
 				if (userFind != null)
